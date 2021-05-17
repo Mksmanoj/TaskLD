@@ -1,68 +1,202 @@
 <!DOCTYPE html>
 <html>
+
+<head>
+
 	<head>
-		<head>
-			<meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-			<title>Dashboard</title>
-			<link rel="stylesheet" href="src/css/dashboard.css" />
-			<link rel="stylesheet" href="src/css/styles.css" />
-			<script src="src/js/dashboard.js"></script>		
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+		<title>Dashboard</title>
+		<link rel="stylesheet" href="src/css/dashboard.css" />
+		<link rel="stylesheet" href="src/css/styles.css" />
+		<script src="src/js/dashboard.js"></script>
 	</head>
-	<body>
-		<div class="container-fluid">
-			<div class="row content">
-			  <div class="col-sm-2 sidenav">
+
+<body>
+	<div class="container-fluid">
+		<div class="row content">
+			<div class="col-sm-2 sidenav">
 				<img src="src/images/yusata.png" />
 				<br />
 				<br />
 				<div class="input-group">
-				  <input
-					type="text"
-					class="form-control"
-					placeholder="Search employee.."
-				  />
-				  <span class="input-group-btn">
-					<button class="btn btn-default" type="button">
-					  <span class="glyphicon glyphicon-search"></span>
-					</button>
-				  </span>
+					<input type="text" class="form-control" placeholder="Search employee.." />
+					<span class="input-group-btn">
+						<button class="btn btn-default" type="button">
+							<span class="glyphicon glyphicon-search"></span>
+						</button>
+					</span>
 				</div>
-				<ul class="nav nav-pills nav-stacked">			  
-					<li ><a href="index.html">DASHBOARD</a></li>
-					<li ><a href="index2.html">EMP MANAGEMENT</a></li>
-					<li class="active"><a href="index3.html">page3</a></li>
+				<ul class="nav nav-pills nav-stacked">
+					<li><a href="index.html">DASHBOARD</a></li>
+					<li><a href="index2.html">EMP MANAGEMENT</a></li>
+					<li class="active"><a href="index3.html">SELECTION</a></li>
 					<li><a href="index4.html">page4</a></li>
 					<li><a href="index5.html">page5</a></li>
 				</ul>
 			</div>
+
 			<body>
 				<!-- logout button -->
 				<p>
 					<a href="javascript_login.html" class="btn btn-info btn-lg">
-					  <span class="glyphicon glyphicon-log-out"></span> Log out
+						<span class="glyphicon glyphicon-log-out"></span> Log out
 					</a>
-				  </p id="btn-lg">
-				  
+				</p id="btn-lg">
+
 				<div class="col-sm-9">
-				<header>
-				  <a href="index.html"><h5>DASHBOARD</h5></a>
-				  <hr />
-				</header>
-			  </div>
-			  </p>
-			  </body>
-			</div>
-		  </div>
-	  
-		  <footer class="container-fluid">
-			<p>
-			  ISO 9001:2008 Certified | © Copyright 2021 Yusata. All rights reserved |
-			  Terms of Use | Privacy Policy
-			</p>
-		  </footer>
-	</body>
+					<header>
+						<a href="index.html">
+							<h5>selection</h5>
+						</a>
+						<hr />
+					</header>
+				</div>
+
+				<style>
+					table {
+						font-family: arial, sans-serif;
+						border-collapse: collapse;
+						width: 100%;
+					}
+
+					td,
+					th {
+						border: 1px solid #dddddd;
+						text-align: center;
+						padding: 8px;
+					}
+
+					tr:nth-child(even) {
+						background-color: #dddddd;
+						
+					}
+				
+				</style>
+				</head>
+
+				<body>
+					<table id="Table1">
+						<tr>
+							<th>&nbsp;select whom you want</th>
+							<th style="width: 80px">Employee Id</th>
+							<th style="width: 120px">Name</th>
+							<th style="width: 120px">Location</th>
+							<th style="width: 120px">Status</th>
+						</tr>
+						<tr>
+							<td><input type="checkbox" /></td>
+							<td>1</td>
+							<td>manoj kumar</td>
+							<td>Odisha</td>
+							<td>Active</td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" /></td>
+							<td>2</td>
+							<td>Rajesh Mallick</td>
+							<td>Himalaya</td>
+							<td>Active</td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" /></td>
+							<td>3</td>
+							<td>Smruti Pattanaik</td>
+							<td>jammu</td>
+							<td>Inactive</td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" /></td>
+							<td>4</td>
+							<td>Arpita Vanja</td>
+							<td>Assam</td>
+							<td>Active</td>
+						</tr>
+					</table>
+					<br />
+
+
+					<script type="text/javascript">
+						function GetSelected() {
+							//Reference the Table.
+							var grid = document.getElementById("Table1");
+							//Reference the CheckBoxes in Table.
+							var checkBoxes = grid.getElementsByTagName("INPUT");
+							var message = "id  Name            location        Status\n ";
+							//Loop through the CheckBoxes.
+							for (var i = 0; i < checkBoxes.length; i++) {
+								if (checkBoxes[i].checked) {
+									var row = checkBoxes[i].parentNode.parentNode;
+									message += row.cells[1].innerHTML;
+									message += "   " + row.cells[2].innerHTML;
+									message += "   " + row.cells[3].innerHTML;
+									message += "   " + row.cells[4].innerHTML;
+									message += "\n";
+								}
+							}
+							//Display selected Row data in Alert Box.
+							alert(message);
+						}
+
+						function selects() {
+							var ele = document.getElementsByTagName('INPUT');
+							for (var i = 0; i < ele.length; i++) {
+								if (ele[i].type == 'checkbox')
+									ele[i].checked = true;
+							}
+						}
+
+						function deSelect() {
+							var ele = document.getElementsByTagName('INPUT');
+							for (var i = 0; i < ele.length; i++) {
+								if (ele[i].type == 'checkbox')
+									ele[i].checked = false;
+
+							}
+						}
+					</script>
+					<br>
+					<input type="button" onclick='selects()' value="Select All" />
+					<input type="button" onclick='deSelect()' value="Deselect All" />
+					<input type="button" value="Submit" onclick="GetSelected()" />
+				</body>
+				<script>
+					function dropDownM() {
+						var mylist = document.getElementById("myList");
+						document.getElementById("favourite").value = mylist.options[mylist.selectedIndex].text;
+					}
+				</script>
+
+				<body>
+					<form>
+						<br>
+						<br>
+						<b> Select employee </b>
+						<select id="myList" onchange="dropDownM()">
+							<option> ---select employee--- </option>
+							<option> emp1 </option>
+							<option> emp2 </option>
+							<option> emp3 </option>
+							<option> emp4 </option>
+						</select>
+						<h5> Your selected employee is:
+							<input type="text" id="favourite" size="20" </p>
+					</form>
+					</h5>
+				</body>
+		</div>
+	</div>
+	<br><br><br><br><br><br><br><br><br><br>
+	<footer class="container-fluid">
+		<br><br><br><br>
+		<p>
+			ISO 9001:2008 Certified | © Copyright 2021 Yusata. All rights reserved |
+			Terms of Use | Privacy Policy
+		</p>
+	</footer>
+</body>
+
 </html>
