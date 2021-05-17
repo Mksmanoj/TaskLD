@@ -3,17 +3,11 @@ html {
   }
 
 table {
-    margin: 40px 0px;
-    background-color: rgb(255, 255, 255);
-    font-size: 16px;
-    border-radius: 5px;
-    box-shadow: 0 0px 1px rgba(34, 245, 6, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-    border: 4ch;
     display: unset;
 }
 
 .row.content {
-    height: 1500px;
+    height: 630px;
 }
 
 .sidenav {
