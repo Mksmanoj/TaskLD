@@ -2,26 +2,23 @@
 <html>
 
 <head>
-
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-		<title>Dashboard</title>
-		<link rel="stylesheet" href="src/css/dashboard.css" />
-		<link rel="stylesheet" href="src/css/styles.css" />
-		<script src="src/js/dashboard.js"></script>
-		<link rel="stylesheet" href="./index2.css" />
-		<script src="./jquery-3.5.1.min.js"></script>
-	</head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<title>Dashboard</title>
+	<link rel="stylesheet" href="src/css/dashboard.css" />
+	<script src="src/js/index.js"></script>
+</head>
 
 <body>
 	<div class="container-fluid">
 		<div class="row content">
 			<div class="col-sm-2 sidenav">
-				<img src="src/images/yusata.png" />
+				<a href="http://www.yusata.com">
+					<img src="src/images/yusata.png" />
+				</a>
 				<br />
 				<br />
 				<div class="input-group">
@@ -57,58 +54,64 @@
 						<hr />
 					</header>
 				</div>
-				</p>
+				<div class="example">
+					<div>
+
+						<table id="maintable">
+							<tr>
+								<th>List of employee</th>
+								<th>Add / Update employee Form</th>
+							</tr>
+							<tr>
+								<td>
+									<table class="row1">
+										<thead>
+											<th>Name</th>
+											<th>Gender</th>
+											<th>Age</th>
+											<th>Team</th>
+											<th>Action</th>
+										</thead>
+										<tbody>
+											<tr>
+											</tr>
+										</tbody>
+									</table>
+								</td>
+								<td>
+									<form onsubmit="event.preventDefault()" autocomplete="off">
+										<label for="name"><strong>Name:</strong></label>
+										<input type="text" id="name" name="name" value="" placeholder="Full Name"
+											required><br><br>
+										<label for="gender"><strong>Gender:</strong></label> <br>
+										<input type="radio" id="male" name="gender" value="Male">
+										<label for="male">Male</label><br>
+										<input type="radio" id="female" name="gender" value="Female">
+										<label for="female">Female</label><br><br>
+										<label for="age"><strong>Age:</strong></label><br>
+										<input type="number" id="age" name="age" value="" required><br><br>
+										<label for="Team"><strong>Team:</strong></label>
+										<select id="Team" name="Team">
+											<option value="Java">Java</option>
+											<option value="Android">Android</option>
+											<option value="IoS">IoS</option>
+											<option value="Data_base">Data_base</option>
+											<option value="Testing">Testing</option>
+											<option value="Cloud">Cloud</option>
+										</select>
+									</form><br>
+									<button class="btn_reset"> <b>Reset</b></button>
+									<button class="btn_add"> <b>Add</b></button>
+									<button class="btn_update"> <b>Update</b></button>
+								</td>
+							</tr>
+							<script src="./script.js"></script>
+					</div>
+				</div>
 			</body>
 		</div>
 	</div>
-	<table id="maintable">
-		<tr>
-			<th>List of employee</th>
-			<th>Add / Update employee Form</th>
-		</tr>
-		<tr>
-			<td>
-				<table class="row1">
-					<thead>
-						<th>Name</th>
-						<th>Gender</th>
-						<th>Age</th>
-						<th>Team</th>
-						<th>Action</th>
-					</thead>
-					<tbody>
-						<tr>
-						</tr>
-					</tbody>
-				</table>
-			</td>
-			<td>
-				<form onsubmit="event.preventDefault()" autocomplete="off">
-					<label for="name"><strong>Name:</strong></label>
-					<input type="text" id="name" name="name" value="" placeholder="Full Name" required><br><br>
-					<label for="gender"><strong>Gender:</strong></label> <br>
-					<input type="radio" id="male" name="gender" value="Male">
-					<label for="male">Male</label><br>
-					<input type="radio" id="female" name="gender" value="Female">
-					<label for="female">Female</label><br><br>
-					<label for="age"><strong>Age:</strong></label><br>
-					<input type="number" id="age" name="age" value="" required><br><br>
-					<label for="Team"><strong>Team:</strong></label>
-					<select id="Team" name="Team">
-						<option value="Java">Java</option>
-						<option value="Android">Android</option>
-						<option value="IoS">IoS</option>
-						<option value="Data_base">Data_base</option>
-						<option value="Testing">Testing</option>
-						<option value="Cloud">Cloud</option>
-					</select>
-				</form><br>
-				<button class="btn_reset"> <b>Reset</b></button>
-				<button class="btn_add"> <b>Add</b></button>
-				<button class="btn_update"> <b>Update</b></button>
-			</td>
-		</tr>
-		<script src="./script.js"></script>
 </body>
+
 
 </html>

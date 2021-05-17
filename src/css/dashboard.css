@@ -11,7 +11,7 @@ table {
 }
 
 .sidenav {
-    background-color: #ffffff;
+    background-color:#ffffff;
     height: 100%;
 }
 
@@ -24,6 +24,7 @@ footer {
 .sidenav a {
     color: black;
     font-size: 15px;
+    font-weight: bold;
 }
 
 .sidenav img {
@@ -45,39 +46,10 @@ section img {
     width: 70%;
 }
 
-.box {
-    height: 100%;
-    width: 25%;
-    background-color: lightsalmon;
-    border: 1px solid lightgrey;
-    float: right;
-    text-align: center;
-    padding: 16px;
-    color: #ffffff;
-
-}
-
-.number {
-    font-size: 25px;
-}
-
-.mg-top {
-    margin-top: -156px;
-    background-color: lightskyblue !important;
-
-
-}
-.bg-clr{
-    background-color: #fff;
-}
-
-th,
-td ,.txt-ctr{
-    text-align: center;
-}
 
 td {
     padding: 20px !important;
+    padding-top: 12px;
 }
 
 
@@ -85,12 +57,10 @@ p{
     text-align: center;
     padding: 20px;
 }
-.mg-lf{
-    margin-left: 16%;
-}
 .btn-lg{
     position:fixed;
     right:10px;
     top:5px;
     ;
  }
+
