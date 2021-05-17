@@ -4,7 +4,7 @@
 		<head>
 			<title>Dashboard</title>
 			<link rel="stylesheet" href="src/css/dashboard.css" />
-			<script src="src/js/dashboard.js"></script>
+			<script src="src/js/index.js"></script>
 			<meta name="viewport" content="width=device-width, initial-scale=1" />
 			<link
 			  rel="stylesheet"
@@ -16,6 +16,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	</head>
 	<body>
+		 
 		<div class="container-fluid">
 			<div class="row content">
 			  <div class="col-sm-2 sidenav">
@@ -23,6 +24,11 @@
 					<img src="src/images/yusata.png" />
 				   </a>
 				<br />
+				<p>
+					<a href="javascript_login.html" class="btn btn-info btn-lg">
+					  <span class="glyphicon glyphicon-log-out"></span> Log out
+					</a>
+				  </p id="btn-lg">
 				<br />
 				<div class="input-group">
 				  <input
@@ -36,7 +42,7 @@
 					</button>
 				  </span>
 				</div>
-				<ul class="nav nav-pills nav-stacked">			  
+				<ul class="nav nav-pills nav-stacked">
 					<li class="active"><a href="index.html">DASHBOARD</a></li>
 					<li ><a href="index2.html">page2</a></li>
 					<li><a href="index3.html">page3</a></li>
@@ -88,8 +94,8 @@
 						  </table>
 					</div>
 				  </div>
-			
-				 
+
+
 				  <script>
 					$(function () {
 					  $("#widget_a").hide();

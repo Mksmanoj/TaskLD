@@ -94,3 +94,9 @@ p{
 .mg-lf{
     margin-left: 16%;
 }
+.btn-lg{
+    position:fixed;
+    right:10px;
+    top:5px;
+    ;
+ }
