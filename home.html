@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  
+  </head>
+  <body>
+    <h1>yusata home page</h1>
+    <div class="example">
+      <p class="toggle"><a href="#widget_a">Show content</a></p>
+      <div class="widget" id="widget_a">
+        <div>
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th>Employee Name</th>
+                    <th>Email</th>
+                    <th>application</th>
+                    <th>Status</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>manoj</td>
+                    <td>mks@gmail.com</td>
+                    <td>leave</td>
+                    <td>granted</td>
+                  </tr>
+                  <tr>
+                    <td>manoj</td>
+                    <td>mks@gmail.com</td>
+                    <td>leave</td>
+                    <td>granted</td>
+                  </tr>
+                  <tr>
+                    <td>manoj</td>
+                    <td>mks@gmail.com</td>
+                    <td>leave</td>
+                    <td>granted</td>
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+      </div>
+
+     
+      <script>
+        $(function () {
+          $("#widget_a").hide();
+          $('a[href="#widget_a"]').click(function (e) {
+            $("#widget_a").slideToggle();
+            e.preventDefault();
+          });
+        });
+      </script>
+    </div>
+  </body>
+</html>
